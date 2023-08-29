@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
+html {
+    max-width: 1480px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 
 body{
     background: #FFF;
     margin: 0;
     padding: 0;
+   
 
 }
 /* Style the navbar */
@@ -27,6 +34,8 @@ body{
     background-color: rgba(255, 255, 255, 0.77);
     transition: background-color 0.3s ease;
     z-index: 1000;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .container {
@@ -43,8 +52,8 @@ body{
 }
 
 .logo img {
-    width: 134px; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
+    height: 65px; /* Adjust the width as needed */
+    width: auto; /* Maintain aspect ratio */
     margin-right: 10px; /* Add some spacing between logo and text */
 }
 
@@ -121,20 +130,21 @@ line-height: 24px; /* 150% */
     background-image: url(BG.svg) ;
     /* background: linear-gradient(90deg, #EAE9E8 52.08%, #B82631 100%); */
     background-size: cover;
-    height: 900px;
-    flex-shrink: 0;
+    height: fit-content;
+    padding: 2rem;
+    padding-top: 3rem;
     }
 
     .banner-section .content-1 .text-large{
         color: #000;
     font-family: Paytone One;
-    font-size: 70px;
+    font-size: 60px;
     font-style: normal;
     font-weight: 400;
     line-height: 82px; /* 117.143% */
+    margin-bottom: .5rem;
+   
 
-    width: 564px;
-    height: 294px;
     flex-shrink: 0;
     }
 
@@ -142,26 +152,26 @@ line-height: 24px; /* 150% */
         color: var(--black, #12141D);
         /* Inter/Regular/20 */
         font-family: Inter;
-        font-size: 20px;
+        font-size: 18px;
         font-style: normal;
         font-weight: 400;
         line-height: 32px; /* 160% */
         letter-spacing: -0.5px;
+        margin-bottom: .5rem;
 
-        width: 552px;
 
         opacity: 0.7;
     }
     .banner-section .content-1 .banner-button{
         display: flex;
-        width: 196px;
-        height: 55px;
         padding: 16px 20px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 10px;
         margin-top: 8px;
+        color: white;
+        text-decoration: none;
 
         border-radius: 15px;
         border-color: transparent;
@@ -182,11 +192,11 @@ line-height: 24px; /* 150% */
     }
 
     .banner-section .content-2 img{
-        width: 100%;
-        height: 567px;
-        object-fit:cover;
-        flex-shrink: 0;
         
+        width: 100%;
+        height: 500px;
+        object-fit:cover;
+ 
         border-radius: 20px;
         background:  lightgray 50% / cover no-repeat;
 
@@ -198,11 +208,10 @@ line-height: 24px; /* 150% */
         justify-content: center;
         align-items: flex-end;
         gap: 75px;
-        padding-left: 10%;
-        padding-right: 9%;
+       
         
 
-        padding-top: 156px;
+        padding-top: 3rem;
     }
 
 
@@ -211,14 +220,13 @@ line-height: 24px; /* 150% */
 
         /* background: linear-gradient(90deg, #EAE9E8 52.08%, #B82631 100%); */
 
-        height: 600px;
+        height: fit-contents;
         flex-shrink: 0;
+        padding: 1rem;
         }
         
-        .Endless-Applications .content-1 {
-            width: 586px;
-            height: 154px;
-            flex-shrink: 0;
+        .Endless-Applications {
+           width: fit-content;
         }
 
         .Endless-Applications .content-1 .text-large{
@@ -241,13 +249,13 @@ line-height: 24px; /* 150% */
             font-style: normal;
             font-weight: 400;
             line-height: 150%; 
-            width: 586px;
         }
         
     
         .Endless-Applications .content-2 img{
-            width: 501px;
+            object-fit: cover;
             height: 397px;
+            width: 100%;
             border-radius: 24px;
             background: lightgray -162.917px -57px / 135.909% 114.358% no-repeat;
     
@@ -271,19 +279,17 @@ line-height: 24px; /* 150% */
     .Future-Fabrication{
 
         /* background: linear-gradient(90deg, #EAE9E8 52.08%, #B82631 100%); */
-
-        height: 600px;
-        flex-shrink: 0;
+        background-image: url(BG.svg) ;
+        height: fit-content;
+        padding: 2rem;
         background-color: #F7F7F7;
-        padding-left: 10%;
 
         display: flex; /* Add flex display */
         justify-content: flex-end; /* Align content to the right */
         }
         
         .Future-Fabrication .content-1 {
-            width: 650px;
-            height: 154px;
+            height: fit-content;
             flex-shrink: 0;
         }
 
@@ -309,14 +315,14 @@ line-height: 24px; /* 150% */
             font-style: normal;
             font-weight: 400;
             line-height: 150%; 
-            width: 586px;
 
             text-align: left;
         }
         
     
         .Future-Fabrication .content-2 img{
-            width: 501px;
+            object-fit: cover;
+            width: 100%;
             height: 397px;
             border-radius: 24px;
             background: lightgray -162.917px -57px / 135.909% 114.358% no-repeat;
@@ -341,9 +347,7 @@ line-height: 24px; /* 150% */
         }
 
 
-.equipment{
- 
-}
+
 
     .equipment .content-box{
         display: inline-flex;
@@ -379,7 +383,6 @@ line-height: 24px; /* 150% */
         font-weight: 400;
         line-height: 28px; /* 155.556% */
 
-        width: 684px;
     }
 
 
@@ -479,7 +482,7 @@ line-height: 24px; /* 150% */
     }
   
     .equipment  .card__image--2 {
-        background-image: url(https://s3-alpha-sig.figma.com/img/d91b/2573/2d7f268c97ccb6e3e5acab1eff147885?Expires=1693785600&Signature=C~9cN81k92kHWS8E8i9F~mN2DMsEwATTr8HuFhniqUNkxAcDzJ~LKotE9jo~gx7BeDtD8aITZFGsysRsOegRmROgowZpciDo3dOjUUzUINq3hi9tJLWlbZ~gCV0ycWVi8Jm6S-BelYkdgPR4jwz8vrNOa1rmLgZTdtPQhTOXoWNRyS7rxFxZw1iDzF71jm30pXbaIy2eDHtwEEpe9ihJwvb6IIpvhLeHUm5LtNg-oSq3~dmsVt8sxbAnaipphS4qjvreYibBKdQwtKMphoaW-okp6qKypx9Oa1K61H7HEHYQTS7LCXhN8uvCZABRmUf5UKo1xo-mNbgOEvr0u3pV2Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4); 
+        background-image: url(https://res.cloudinary.com/inside-plastics/image/upload/v1693228292/Calsak/AdobeStock_435789656-2_bdanfa.jpg); 
     }
 
     .equipment  .card__image--3 {
@@ -496,6 +499,17 @@ line-height: 24px; /* 150% */
 
     .equipment  .card__image--6 {
         background-image: url(https://s3-alpha-sig.figma.com/img/fe7c/3b29/a91ff37829b8564a0fbb2a7f896d0fe9?Expires=1693785600&Signature=IvvpBZkADd3ygZVxqzClpG5-N3tzLI0VTbI7~VmvNNHI8nd1GXeWmBg4Md9ZFj9ylIKsHCgmND7oGFl5rxSZv6Np2iCJ4sLb9KTwCxICTrl7UNjCQj-gGiqyE6mjvIOOOpCKMqoVkiptYFBbOJHVoeWolM0Dp6xPI9dxjRbbgrqSek1Y-U1RnAaanRa2tKijfr~xSP~LFx6sG6K0qi66s-83RjfPWHrbICHSzJWEx879ke0QzAb64VvyxvtI5M502DWOJJfMQ1OSFwasSczZK957gIUTL~HdG3iXChGuQCMKATN-hhwgyyAAQeKbsGR0FtcsFp4bj2B65jDa524kbw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4); 
+    }
+
+    .equipment  .card__image--7 {
+        background-image: url(https://res.cloudinary.com/inside-plastics/image/upload/v1693228292/Calsak/iStock-177304284_cropped_nbo4eh.jpg); 
+    }
+    .equipment  .card__image--8 {
+        background-image: url(https://res.cloudinary.com/inside-plastics/image/upload/v1689086745/Calsak/MicrosoftTeams-image_10_jvqlh2.jpg); 
+    }
+
+    .equipment  .card__image--9 {
+        background-image: url(https://res.cloudinary.com/inside-plastics/image/upload/v1688729737/Calsak/MicrosoftTeams-image_5_avodyh.png); 
     }
 
 
@@ -549,8 +563,7 @@ line-height: 24px; /* 150% */
         justify-content: center;
         display: flex;  
 
-        padding-top: 48px;
-        padding-bottom: 38px;
+       padding: 1rem;
        
 
     }
@@ -578,7 +591,6 @@ line-height: 24px; /* 150% */
         font-weight: 400;
         line-height: 28px; /* 155.556% */
 
-        width: auto;
     }
 
     .Industry-Applications .Large-cards {
@@ -615,6 +627,7 @@ line-height: 24px; /* 150% */
     .Industry-Applications .Large-cards .card img{
         width: 415px;
         height: 408px;
+        object-fit: cover;
         flex-shrink: 0;
         border-radius: 24px;
         /* background: url(https://s3-alpha-sig.figma.com/img/fe7c/3b29/a91ff37829b8564a0fbb2a7f896d0fe9?Expires=1693785600&Signature=IvvpBZkADd3ygZVxqzClpG5-N3tzLI0VTbI7~VmvNNHI8nd1GXeWmBg4Md9ZFj9ylIKsHCgmND7oGFl5rxSZv6Np2iCJ4sLb9KTwCxICTrl7UNjCQj-gGiqyE6mjvIOOOpCKMqoVkiptYFBbOJHVoeWolM0Dp6xPI9dxjRbbgrqSek1Y-U1RnAaanRa2tKijfr~xSP~LFx6sG6K0qi66s-83RjfPWHrbICHSzJWEx879ke0QzAb64VvyxvtI5M502DWOJJfMQ1OSFwasSczZK957gIUTL~HdG3iXChGuQCMKATN-hhwgyyAAQeKbsGR0FtcsFp4bj2B65jDa524kbw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4), lightgray 50% / cover no-repeat; */
@@ -784,6 +797,88 @@ line-height: 24px; /* 150% */
         letter-spacing: -0.5px;
     }
 
+    .content-1 {
+        width: 50%;
+    }
 
+    .content-2 {
+        width: 50%;
+    }
+
+    @media only screen and (max-width: 1200px) {
+
+    .banner-section .content-1 .text-large{
+        color: #000;
+    font-family: Paytone One;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 82px; /* 117.143% */
+    margin-bottom: .5rem;
+   
+
+    flex-shrink: 0;
+    }
+
+    .banner-section .content-1 .text-Medium{
+        color: var(--black, #12141D);
+        /* Inter/Regular/20 */
+        font-family: Inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px; /* 160% */
+        letter-spacing: -0.5px;
+        margin-bottom: .5rem;
+
+
+        opacity: 0.7;
+    }
+
+    }
+
+    @media only screen and (max-width: 1000px) {
+
+        .banner-section .content-1 .text-large {
+            font-size: 50px;
+            line-height: 82px; /* 117.143% */
+
+        }
+
+        .content-1 {
+            width: 100%;
+        }
+    
+        .content-2 {
+            width: 100%;
+        }
+        
+        
+        .content-box {
+            flex-direction: column;
+        }
+
+        .content-2 {
+            width: 100%;
+        }
+        
+        .Endless-Applications .content-box {
+            flex-direction: column-reverse;
+        }
+
+        .logo img {
+            height: 40px; /* Adjust the width as needed */
+            width: auto; /* Maintain aspect ratio */
+            margin-right: 10px; /* Add some spacing between logo and text */
+        }
+    }
+
+    @media only screen and (max-width: 800px) {
+
+        .nav-links {
+            display: none;
+        }
+
+    }
       
-  
+ 
